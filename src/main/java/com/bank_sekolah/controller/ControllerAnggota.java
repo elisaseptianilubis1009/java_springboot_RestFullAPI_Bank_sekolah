@@ -27,6 +27,11 @@ public class ControllerAnggota {
 	public List<ModelAnggota> get(){
 		return danggota.getAll();
 	}
+
+	@GetMapping(value="/anggota1")
+	public List<ModelAnggota> get(){
+		return danggota.getAll();
+	}
 	
 	@RequestMapping(value="/anggota/{nim}")
 	public ModelAnggota getnim(@PathVariable String nim){
